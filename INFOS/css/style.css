@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1B9476;
+}
+.menu li {
+    list-style: none;
+    display: inline;
+    margin: 15px;
+    font-size: 20px;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    text-align: right;
+    background-color: #1B9476;
+    padding: 30px;
+}
+.voir-menu,.cacher-menu, #check {
+    display: none;
+}
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.8s;
+}
+.menu li a:hover {
+    text-decoration: none;
+    color: #f00;
+    transition: 0.8s;
+}
+.menu li .on {
+    color: yellow;
+}
+div h1 {
+    text-align: center;
+    color: #87FF00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    margin-top: 10px;
+}
+div h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #dbdbdb;
+}
+section {
+    background-color: #fff;
+    width: 450px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 100px;
+}
+section p {
+    color: rgb(29, 207, 29);
+}
+section div {
+    width: 20%;
+    height: 7px;
+    background-color: #857DFF;
+    margin: auto;
+}
+footer {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+footer i {
+    margin: 10px;
+    font-size: 25px;
+    color: #24D26D;
+}
+.vert {
+    color: #24D26D;
+}
+.dbdbdb {
+    color: #dbdbdb;
+}
+/* Ce qui concerne la page ABOUT.html */
+article {
+    background-color: #fff;
+    width: 450px;
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+}
+.photo {
+    position: relative;
+    left: 112px;
+}
+article h1 {
+    color: rgb(27, 223, 27);
+    font-size: 40px;
+}
+article h2 {
+    color: #24D26D;
+}
+article p span {
+    color: #24D26D;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+article p {
+    line-height: 30px;
+}
+
+article p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Ce qui concerne la page contact */
+.taille {
+    font-size: 50px;
+}
+article input, textarea {
+    display: block;
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 93%;
+    background-color: #ccc;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+label {
+    font-family: Arial;
+}
+article button {
+    background-color: #1B9476;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    position: relative;
+    left: 91%;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+/* Ce qui concerne la page blog */
+.Blog1,.Blog2,.Blog3 {
+    position: relative;
+    left: 0px;
+    width: 100%;
+}
+@media screen and (max-width: 950px) {
+    .voir-menu,.cacher-menu {
+        display: inline;
+        font-size: 30px;
+        cursor: pointer;
+        transition: 0.8s;
+    }
+    .voir-menu:hover,.cacher-menu:hover {
+        color: #fff;
+        transition: 0.8s;
+    }
+    .menu {
+        position: fixed;
+        top: 0px;
+        right: -200%;
+        height: 100vh;
+        background-color: #1B9476;
+        width: 100%;
+        transition: 0.8s;
+        padding-top: 100px;
+    }
+    #check:checked ~ .menu {
+        right: 0%;
+    }
+    .menu li {
+        display: block;
+        text-align: left;
+        border: 1px solid #0f0;
+        margin: 0px;
+        margin-left: 15px;
+        padding: 10px;
+       
+    }
+    .cacher-menu {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: #000;
+    }
+
+}
